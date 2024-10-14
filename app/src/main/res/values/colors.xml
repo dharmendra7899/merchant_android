@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D80505</color>
+    <color name="colorPrimaryDark">#34373A</color>
+    <color name="colorGreen">#027A48</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorText">#34373A</color>
+    <color name="colorRed">#FF5F4D</color>
+    <color name="colorGrey">#D3D3D3</color>
+    <color name="colorSecondaryDark">#03DAC6</color>
+    <color name="colorSecondary">#E5E5EA</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bottom_nav_item_icon_color">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:color="@color/colorPrimary" android:state_checked="true"/>
+            <item android:color="@color/colorSecondary"/>
+        </selector>
+    </color>
+    <color name="bottom_nav_item_text_color">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:color="@color/colorPrimary" android:state_checked="true"/>
+            <item android:color="@color/colorSecondary"/>
+        </selector>
+    </color>
+</resources>

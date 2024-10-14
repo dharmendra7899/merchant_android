@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/montserrat_font_family</item>
+    </style>
+
+<!-- Custom BottomNavigationView style -->
+<style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+    <item name="itemIconTint">@color/bottom_nav_item_icon_color</item>
+    <item name="itemTextColor">@color/bottom_nav_item_text_color</item>
+    <item name="backgroundTint">@color/colorBackground</item>
+</style>
+
+    <!-- Custom Text Appearance for Bottom Navigation Active Label -->
+    <style name="BottomNavigationTextActive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Custom Text Appearance for Bottom Navigation Inactive Label -->
+    <style name="BottomNavigationTextInactive" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+
+
+</resources>

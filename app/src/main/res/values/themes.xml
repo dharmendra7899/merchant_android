@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/montserrat_font_family</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorOnError">@color/colorRed</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <!-- Background and Text colors -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+</resources>
