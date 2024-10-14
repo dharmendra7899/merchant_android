@@ -94,16 +94,12 @@
             <Switch
                 android:id="@+id/status_switch"
                 android:layout_width="120dp"
-                android:track="@drawable/switch_bg"
-                android:thumb="@drawable/switch_selector"
                 android:layout_height="40dp"
-
                 android:layout_centerVertical="true"
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@id/shop_name_text"
-                />
-
-
+                android:thumb="@drawable/switch_selector"
+                android:track="@drawable/switch_bg" />
 
 
         </RelativeLayout>
@@ -152,7 +148,7 @@
         <Button
             android:id="@+id/order_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:backgroundTint="@color/colorSecondary"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/today"

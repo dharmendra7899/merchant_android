@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -18,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var aggregatorLayout: LinearLayout
     private lateinit var btnContinue: Button
     private lateinit var notUser: TextView
+    private lateinit var checkBox: CheckBox
     private lateinit var mobileNumber: TextInputEditText
     private lateinit var password: TextInputEditText
     private var selectedUserType: String? = null
@@ -32,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
         mobileNumber = findViewById(R.id.mobile_number)
         password = findViewById(R.id.password)
         notUser = findViewById(R.id.register_text)
+        checkBox = findViewById(R.id.agree_checkbox)
 
         merchantLayout.setOnClickListener {
             selectUserType("Merchant")
@@ -84,6 +87,10 @@ class LoginActivity : AppCompatActivity() {
 
         if (selectedUserType == null) {
             Toast.makeText(this, "Please select a user type", Toast.LENGTH_SHORT).show()
+            isValid = false
+        }
+        if(!checkBox.isChecked){
+            Toast.makeText(this, "Please Accept Terms and Conditions", Toast.LENGTH_SHORT).show()
             isValid = false
         }
 

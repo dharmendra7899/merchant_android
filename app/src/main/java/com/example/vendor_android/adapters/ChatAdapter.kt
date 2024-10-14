@@ -1,16 +1,21 @@
 package com.example.vendor_android.adapters
 
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vendor_android.R
+import com.example.vendor_android.fragments.ChatDetailFragment
 import com.example.vendor_android.modes.ChatItem
 
-class ChatAdapter(private val chatList: List<ChatItem>) :
+
+class ChatAdapter(private val chatList: List<ChatItem>,private val fragment: Fragment) :
     RecyclerView.Adapter<ChatAdapter.ChatViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
@@ -28,7 +33,10 @@ class ChatAdapter(private val chatList: List<ChatItem>) :
         holder.chatAvatar.setImageResource(R.drawable.app_logo)
 
         holder.itemView.setOnClickListener {
-            // Handle chat item click
+            fragment.parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ChatDetailFragment())
+                .addToBackStack(null) // Optional: Add to back stack
+                .commit()
         }
     }
 

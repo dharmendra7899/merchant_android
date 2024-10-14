@@ -7,14 +7,18 @@
             android:dither="true"
             android:useLevel="false">
             <gradient
+
                 android:startColor="@color/colorGreen"
                 android:endColor="@color/colorGreen"
                 android:angle="270"/>
             <corners
-                android:radius="15.5dp"/>
+                android:radius="15.5dp"
+                />
             <size
+
                 android:width="30dp"
-                android:height="30dp" />
+                android:height="30dp"
+                />
             <stroke
                 android:width="2dp"
                 android:color="#0000ffff"/>

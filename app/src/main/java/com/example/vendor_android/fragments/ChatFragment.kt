@@ -55,17 +55,11 @@ class ChatFragment : Fragment() {
             ChatItem("Home", "Did you check Maisie\\'s latest post?", "Today")
         )
 
-        chatAdapter = ChatAdapter(chatList)
+        chatAdapter = ChatAdapter(chatList,this)
         recyclerView.adapter = chatAdapter
     }
 
-    private fun showKeyboard() {
-        searchView.post {
-            val imm =
-                requireContext().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.showSoftInput(searchView, InputMethodManager.SHOW_IMPLICIT)
-        }
-    }
+
 
 
 }

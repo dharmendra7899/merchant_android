@@ -1,4 +1,4 @@
-package com.example.myapplication.fragments
+package com.example.vendor_android.fragments
 
 import androidx.fragment.app.Fragment
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vendor_android.R
 import com.example.vendor_android.adapters.ProductAdapter
+import com.example.vendor_android.fragments.ProductsFragment
 
 
 class ProductFragment : Fragment() {
@@ -38,6 +39,15 @@ class ProductFragment : Fragment() {
         )
 
         productAdapter = ProductAdapter(productList) { title ->
+
+            if(title == "Product(s)"){
+
+                val productFragment = ProductsFragment()
+                parentFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, productFragment)
+                    .addToBackStack(null)
+                    .commit()
+            }
             // Handle click events
             // Navigate to the appropriate activity based on the title
         }

@@ -17,14 +17,14 @@
     <!-- Custom Text Appearance for Bottom Navigation Active Label -->
     <style name="BottomNavigationTextActive" parent="TextAppearance.AppCompat.Caption">
         <item name="android:fontFamily">@font/montserrat_medium</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <!-- Custom Text Appearance for Bottom Navigation Inactive Label -->
     <style name="BottomNavigationTextInactive" parent="TextAppearance.AppCompat.Caption">
         <item name="android:fontFamily">@font/montserrat_regular</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textColor">@color/colorSecondary</item>
     </style>
 

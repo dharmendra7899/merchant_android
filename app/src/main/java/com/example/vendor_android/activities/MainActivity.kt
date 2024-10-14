@@ -5,7 +5,7 @@ import android.os.Handler
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.myapplication.fragments.ProductFragment
+import com.example.vendor_android.fragments.ProductFragment
 import com.example.vendor_android.R
 import com.example.vendor_android.fragments.AccountFragment
 import com.example.vendor_android.fragments.ChatFragment
