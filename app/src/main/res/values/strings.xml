@@ -17,6 +17,7 @@
     <string name="orders">Orders</string>
     <string name="myOrders">My Orders</string>
     <string name="product">Products</string>
+    <string name="addProduct">Add Product</string>
     <string name="status">Open</string>
     <string name="today">Today</string>
     <string name="payment_history">Payment History</string>

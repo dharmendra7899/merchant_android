@@ -2,6 +2,7 @@ package com.example.vendor_android.fragments
 
 import Product
 import ProductListAdapter
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -15,6 +16,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.vendor_android.R
+import com.example.vendor_android.activities.AddProductActivity
+import com.example.vendor_android.activities.ChatDetailActivity
 import com.example.vendor_android.adapters.AccountAdapter
 
 class ProductsFragment : Fragment() {
@@ -32,7 +35,8 @@ class ProductsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
-       val backButton = view.findViewById<ImageView>(R.id.back_btn)
+        val backButton = view.findViewById<ImageView>(R.id.back_btn)
+        val addProduct = view.findViewById<Button>(R.id.add_product)
         backButton.setOnClickListener(View.OnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         })
@@ -52,6 +56,13 @@ class ProductsFragment : Fragment() {
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
         productAdapter = ProductListAdapter(productList)
         recyclerView.adapter = productAdapter
+
+        addProduct.setOnClickListener(View.OnClickListener {
+            val intent = Intent(requireContext(), AddProductActivity::class.java)
+            startActivity(intent)
+        })
+
+
     }
 
 }
