@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
@@ -15,8 +16,8 @@ import com.example.vendor_android.adapters.OnboardingAdapter
 class OnBoardingScreen : AppCompatActivity() {
 
     private lateinit var viewPager: ViewPager2
-    private lateinit var skipButton: Button
-    private lateinit var nextButton: Button
+    private lateinit var skipButton: TextView
+    private lateinit var nextButton: TextView
     private lateinit var getStartedButton: Button
     private lateinit var indicatorContainer: LinearLayout
     private lateinit var btnContainer: LinearLayout

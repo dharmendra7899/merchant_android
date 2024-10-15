@@ -7,6 +7,7 @@
     <color name="colorText">#34373A</color>
     <color name="colorRed">#FF5F4D</color>
     <color name="colorGrey">#D3D3D3</color>
+    <color name="colorGreyLight">#F5F5F5FF</color>
     <color name="colorSecondaryDark">#03DAC6</color>
     <color name="colorSecondary">#E5E5EA</color>
     <color name="colorAccent">#03DAC5</color>

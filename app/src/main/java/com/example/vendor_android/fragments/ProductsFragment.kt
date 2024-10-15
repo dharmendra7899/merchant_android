@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import android.widget.Toolbar
 import androidx.recyclerview.widget.GridLayoutManager
@@ -36,7 +37,7 @@ class ProductsFragment : Fragment() {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.recycler_view)
         val backButton = view.findViewById<ImageView>(R.id.back_btn)
-        val addProduct = view.findViewById<Button>(R.id.add_product)
+        val addProduct = view.findViewById<LinearLayout>(R.id.add_product)
         backButton.setOnClickListener(View.OnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         })
@@ -46,7 +47,12 @@ class ProductsFragment : Fragment() {
             Product(R.drawable.biryani, "Veg Biryani", "₹99", "₹149", "pending", false),
             Product(R.drawable.chicken, "Chicken Biryani", "₹149", "₹299", "completed", true),
             Product(R.drawable.chicken, "Chicken Biryani", "₹149", "₹299", "completed", true),
+            Product(R.drawable.biryani, "Veg Biryani", "₹99", "₹149", "pending", false),
+
             Product(R.drawable.chicken, "Chicken Biryani", "₹149", "₹299", "completed", true),
+
+            Product(R.drawable.pizza, "Pizza", "₹349", "₹399", "completed", true),
+
             Product(R.drawable.chicken, "Chicken Biryani", "₹149", "₹299", "completed", true),
             Product(R.drawable.pizza, "Pizza", "₹349", "₹399", "completed", true),
             Product(R.drawable.biryani, "Veg Biryani", "₹99", "₹149", "pending", false),

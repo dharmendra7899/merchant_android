@@ -23,7 +23,6 @@
     <string name="payment_history">Payment History</string>
     <string name="order_text">Orders(11)</string>
     <string name="order1_text">You have received total 13 orders today</string>
-    <string name="hello_blank_fragment">Blank Fragment</string>
     <string name="not_user">Not a user? Register</string>
     <string name="user">Already hav ean account? Sing In</string>
     <string name="sign_with_otp">Sign in with OTP</string>
@@ -31,6 +30,30 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="mobile">Mobile Number</string>
+    <string name="aggregatorProduct">Aggregator Products*</string>
+    <string name="category">Category*</string>
+    <string name="subCategory">Sub-Category*</string>
+    <string name="foodType">Food Type*</string>
+    <string name="mall">Mall*</string>
+    <string name="attributeName">Attribute Name*</string>
+    <string name="sellingPrice">Selling Price*</string>
+    <string name="actualPrice">Actual Price*</string>
+    <string name="description">Description</string>
+    <string name="productTitle">Product Title*</string>
+    <string name="productDescription">Product Description</string>
+    <string name="price">Price*</string>
+    <string name="mrp">MRP*</string>
+    <string name="packingCharges">Packing Charges*</string>
+    <string name="weight">Weight in KG*</string>
+    <string name="gst">GST*</string>
+    <string name="totalStock">Total Stock*</string>
+    <string name="freeDelivery">Free Delivery</string>
+    <string name="cancellationPolicy">Cancellation Policy</string>
+    <string name="exchangePolicy">Exchange Policy</string>
+    <string name="productImage">Product Image*</string>
+    <string name="save">Save</string>
+    <string name="imageWarning">Upload JPG, JPEG or PNG image </string>
+    <string name="imageNote">Note: Product image must not be more than 5 MB </string>
     <string name="searchText">Search here...</string>
     <string name="full_name">Full Name</string>
     <string name="continue_text">Continue</string>
@@ -53,5 +76,17 @@
     <string name="customerSupport">Customer Support </string>
     <string name="servicePlans">Service Plans </string>
     <string name="add">Add </string>
+    <string name="gallery">Choose from Gallery </string>
+    <string name="camera">Take Photo </string>
+
+    <string-array name="category_items">
+        <item>Select Category</item>
+        <item>Chicken Biryani</item>
+        <item>Pizza</item>
+        <item>Burger</item>
+        <item>Momos</item>
+        <item>Veg Biryani</item>
+    </string-array>
+
 
 </resources>

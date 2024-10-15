@@ -50,18 +50,27 @@
                     android:textColor="@color/colorBackground"
                     android:textSize="20sp" />
 
-                <Button
+                <LinearLayout
                     android:id="@+id/add_product"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:backgroundTint="@color/colorBackground"
-                    android:fontFamily="@font/montserrat_medium"
-                    android:shadowRadius="@integer/car_ui_default_max_string_length"
-                    android:text="@string/add"
-                    android:textColor="@color/colorText"
-                    android:textSize="14sp" />
+                    android:background="@drawable/button_white_bg">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/add"
+                        android:gravity="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
             </RelativeLayout>
 
 
