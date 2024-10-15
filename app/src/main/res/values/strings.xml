@@ -51,5 +51,6 @@
     <string name="privacyPolicy">Privacy Policy </string>
     <string name="customerSupport">Customer Support </string>
     <string name="servicePlans">Service Plans </string>
+    <string name="add">Add </string>
 
 </resources>

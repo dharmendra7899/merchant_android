@@ -25,10 +25,10 @@
             android:name=".activities.OnBoardingScreen"
             android:exported="true" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.ChatDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.SplashScreen"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,11 +1,9 @@
 package com.example.vendor_android.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,32 +12,29 @@ import com.example.vendor_android.R
 import com.example.vendor_android.adapters.ChatAdapter
 import com.example.vendor_android.modes.ChatItem
 
-
 class ChatFragment : Fragment() {
 
     private lateinit var chatAdapter: ChatAdapter
     private lateinit var searchView: SearchView
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_chat, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val recyclerView = view.findViewById<RecyclerView>(R.id.chat_recyclerView)
-        val linearLayout: View = view.findViewById(R.id.lin)
         searchView = view.findViewById(R.id.searchView)
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         searchView.setOnClickListener { searchView.isIconified = false }
 
-
         val chatList = listOf(
+            ChatItem("It's me", "Ok see you tomorrow", "Yesterday"),
+            ChatItem("Prabhat Kumar", "Aaj bhut jyada barish ho rhi hai yrr?", "Yesterday"),
             ChatItem("It's me", "Ok see you tomorrow", "Yesterday"),
             ChatItem("Parbhaaat kumar", "Aaj bhut jyada barish hio rhi hai yrr?", "Yesterday"),
             ChatItem("HR", "Did you check Documents?", "Yesterday"),
@@ -55,11 +50,8 @@ class ChatFragment : Fragment() {
             ChatItem("Home", "Did you check Maisie\\'s latest post?", "Today")
         )
 
-        chatAdapter = ChatAdapter(chatList,this)
+        chatAdapter = ChatAdapter(chatList, requireActivity())
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = chatAdapter
     }
-
-
-
-
 }

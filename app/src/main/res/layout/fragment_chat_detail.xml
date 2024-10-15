@@ -3,27 +3,81 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/colorSecondary">
+    android:background="@color/colorBackground">
 
-    <!-- RecyclerView for Chat Messages -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorText"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.MyApplication">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/colorBackground" />
+
+
+            <ImageView
+                android:elevation="2dp"
+                android:id="@+id/chat_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/back_btn_chat"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/colorBackground"
+                android:gravity="center"
+                android:src="@drawable/app_logo" />
+
+
+            <TextView
+                android:id="@+id/toolbar_title_chat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/chat_image"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/product"
+                android:textColor="@color/colorBackground"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp"
         android:layout_above="@+id/chat_input_layout"
+        android:padding="8dp"
         android:scrollbars="vertical" />
 
-    <!-- Chat Input Layout -->
     <LinearLayout
         android:id="@+id/chat_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
         android:background="@android:color/white"
         android:elevation="4dp"
+        android:orientation="horizontal"
         android:padding="8dp">
 
         <!-- EditText for Message Input -->
@@ -31,24 +85,24 @@
             android:id="@+id/input_message"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="Type a message"
-            android:background="@android:color/transparent"
-            android:textColor="@color/colorText"
-            android:paddingEnd="8dp"
-            android:fontFamily="@font/montserrat_regular"
             android:layout_marginEnd="8dp"
-            android:textSize="16sp"
-            android:maxLines="4" />
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="Type a message"
+            android:maxLines="4"
+            android:paddingEnd="8dp"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
 
         <!-- Send Button -->
         <ImageView
             android:id="@+id/button_send"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_send"
-            android:padding="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_send"
             app:tint="@color/colorText" />
     </LinearLayout>
 </RelativeLayout>

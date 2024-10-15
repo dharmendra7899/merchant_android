@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/shadow_toolbar_bg"
+        android:background="@color/colorText"
         android:elevation="2dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +23,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/montserrat_semi_bold"
             android:text="@string/product"
-            android:textColor="@color/colorText"
+            android:textColor="@color/colorBackground"
             android:textSize="20sp" />
     </androidx.appcompat.widget.Toolbar>
 
