@@ -62,18 +62,78 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat_medium"
+                android:text="@string/aggregatorProduct"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+
+            <Spinner
+                android:id="@+id/aggregator_product_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="match_parent"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:text="@string/category"
                 android:textColor="@color/colorText"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
-            <!-- android:background="@drawable/spinner_bg"-->
 
             <Spinner
                 android:id="@+id/category_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="6dp"
-                android:dropDownWidth="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="match_parent"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/subCategory"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+
+            <Spinner
+                android:id="@+id/sub_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="match_parent"
+                android:padding="10dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/foodType"
+                android:textColor="@color/colorText"
+                android:textSize="14sp" />
+
+
+            <Spinner
+                android:id="@+id/food_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/spinner_bg"
+                android:dropDownWidth="match_parent"
                 android:padding="10dp"
                 android:spinnerMode="dropdown" />
 
@@ -95,15 +155,18 @@
                     android:textColorHint="@android:color/darker_gray" />
             </com.google.android.material.textfield.TextInputLayout>
 
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/description"
+                style="@style/CustomTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/montserrat_medium"
                 android:hint="@string/productDescription"
-                android:textSize="14sp"
+                app:boxStrokeColor="@android:color/transparent"
+                app:boxStrokeWidthFocused="0dp"
                 app:errorEnabled="false"
+                app:hintEnabled="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/merchant_aggregator_options">

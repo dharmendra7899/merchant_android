@@ -31,6 +31,24 @@ class AddProductActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_product)
         val back = findViewById<ImageView>(R.id.back_btn_add)
+
+        ///this is for aggregator product
+        val productSpinner: Spinner = findViewById(R.id.aggregator_product_spinner)
+        val productAdapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.aggregator_product_items,
+            R.layout.spinner_layout
+        )
+
+        productAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        productSpinner.adapter = productAdapter
+        productSpinner.setSelection(0, false)
+        productSpinner.prompt = "Select Aggregator Product"
+
+
+
+
+        ///this is for category
         val spinner: Spinner = findViewById(R.id.category_spinner)
         val adapter = ArrayAdapter.createFromResource(
             this,
@@ -42,6 +60,38 @@ class AddProductActivity : AppCompatActivity() {
         spinner.adapter = adapter
         spinner.setSelection(0, false)
         spinner.prompt = "Select Category"
+
+
+
+
+        ///this is for sub category
+      val subCategorySpinner: Spinner = findViewById(R.id.sub_spinner)
+        val subCategoryAdapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.sub_category_items,
+            R.layout.spinner_layout
+        )
+
+        subCategoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        subCategorySpinner.adapter = subCategoryAdapter
+        subCategorySpinner.setSelection(0, false)
+        subCategorySpinner.prompt = "Select Sub Category"
+
+
+
+
+        ///this is for food type
+        val foodTypeSpinner: Spinner = findViewById(R.id.food_type_spinner)
+        val foodTypeAdapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.food_type,
+            R.layout.spinner_layout
+        )
+
+        foodTypeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        foodTypeSpinner.adapter = foodTypeAdapter
+        foodTypeSpinner.setSelection(0, false)
+        foodTypeSpinner.prompt = "Select Food Type"
 
         btnSelectImage = findViewById(R.id.uploadImage)
         imageView = findViewById(R.id.product_imageView)

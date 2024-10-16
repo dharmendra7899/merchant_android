@@ -79,14 +79,39 @@
     <string name="gallery">Choose from Gallery </string>
     <string name="camera">Take Photo </string>
 
+    <string-array name="aggregator_product_items">
+        <item>Select Product</item>
+        <item>Burger</item>
+        <item>Mobile Accessories</item>
+        <item>Grocery</item>
+        <item>Mens Cloth</item>
+        <item>Pizza</item>
+    </string-array>
+
     <string-array name="category_items">
         <item>Select Category</item>
+        <item>Food</item>
+        <item>Food Court</item>
+        <item>Grocery</item>
+        <item>Electronics</item>
+        <item>Fashion</item>
+    </string-array>
+
+    <string-array name="sub_category_items">
+        <item>Select Sub Category</item>
         <item>Chicken Biryani</item>
         <item>Pizza</item>
         <item>Burger</item>
-        <item>Momos</item>
+        <item>Potato</item>
         <item>Veg Biryani</item>
     </string-array>
+
+    <string-array name="food_type">
+        <item>Select Food Type</item>
+        <item>Veg</item>
+        <item>Non Veg</item>
+    </string-array>
+
 
 
 </resources>
